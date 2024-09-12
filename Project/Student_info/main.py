@@ -1,6 +1,6 @@
 
-from Student_info.score import Score
-from Student_info.Student import Student
+from Project.Student_info.score import Score
+from Project.Student_info.Student import Student
 
 # 储存学生信息
 students = []
