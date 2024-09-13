@@ -44,13 +44,15 @@ def print_stu():
         index += 1
         print(f"student {index} , id: {i.id}, name: {i.name}, "
               f"sex: {i.sex}, project and score: {i.score.project, i.score.score}")
-
+# 查询学生信息
 def print_info():
     info: int = 0
     for i in students:
         index = input("Enter search student index: ")
         print(f"student { index + 1 } , id: {i.id}, name: {i.name}, "
               f"sex: {i.sex}, project and score: {i.score.project, i.score.score}")
+
 if __name__ == '__main__':
     main()
+    print_stu()
     print_info()
