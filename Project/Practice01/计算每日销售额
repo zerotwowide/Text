@@ -1,10 +1,12 @@
 1 设计一个类，封装数据
 class Record
+data_define.py
 
 
 2 设计类实现处理数据的功能
-
+fileReader.py
 
 
 3 对时间和对应金额处理计算销售额
 输出每日销售金额
+main.py
