@@ -28,10 +28,10 @@ def main():
                   f"sex: {i.sex}, project and score: {i.score.project, i.score.score}")
 
         # 判断是否退出录入
-        judgment = input("Do you want to continue?(True/False): ")
-        if judgment == "True":
+        judgment = input("Do you want to continue?(yes/no): ")
+        if judgment == "yes":
             continue
-        elif judgment == "False":
+        elif judgment == "no":
             break
         else:
             print("输入错误，结束录入")
@@ -39,12 +39,18 @@ def main():
 
 # 打印所有学生信息
 def print_stu():
-    count = 0
+    index = 0
     for i in students:
-        count += 1
-        print(f"student {count} , id: {i.id}, name: {i.name}, "
+        index += 1
+        print(f"student {index} , id: {i.id}, name: {i.name}, "
               f"sex: {i.sex}, project and score: {i.score.project, i.score.score}")
 
+def print_info():
+    info: int = 0
+    for i in students:
+        index = input("Enter search student index: ")
+        print(f"student { index + 1 } , id: {i.id}, name: {i.name}, "
+              f"sex: {i.sex}, project and score: {i.score.project, i.score.score}")
 if __name__ == '__main__':
     main()
-    print_stu()
+    print_info()
