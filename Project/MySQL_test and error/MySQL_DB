@@ -35,3 +35,6 @@ select * from test_pymysql where sex = '女';
 
 # 分组聚合 和 排序分页
 select sex,count(sex) from test_pymysql group by sex order by sex desc;
+
+# 删除表
+drop table student;
