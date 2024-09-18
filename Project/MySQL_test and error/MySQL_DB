@@ -1,0 +1,37 @@
+# 选择数据库
+use test;
+
+# 查看当前数据库
+select database();
+
+# 查看数据库中的表
+show tables;
+
+# 创建表 test_pymysql
+create table test_pymysql(
+	id int,
+	name varchar(12),
+	sex varchar(12)
+);
+
+
+# 在 test_pymysql 表中创建列
+insert into test_pymysql(id ,name ,sex )values
+(10001,'芊芊','女'),
+(10002,'老耿','男'),
+(10003,'老王','男'),
+(10004,'杰伦','男'),
+(10005,'囧菌','女'),
+(10006,'星星','女'),
+(10007,'张三','男'),
+(10008,'李四','男'),
+(10009,'王五','女');
+
+# 更改信息
+update test_pymysql set name = '嫦娥' where name = '星星';
+
+# 查询表中列数据
+select * from test_pymysql where sex = '女';
+
+# 分组聚合 和 排序分页
+select sex,count(sex) from test_pymysql group by sex order by sex desc;
