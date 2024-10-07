@@ -1,0 +1,3 @@
+一个类型：   HTTPResponse
+六个方法：   read  readline  readlines  getcode  geturl  getheaders
+
